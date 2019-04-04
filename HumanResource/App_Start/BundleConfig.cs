@@ -22,9 +22,24 @@ namespace HumanResource
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/js").Include(
+                      "~/Scripts/jquery.ba-outside-events.min.js",
+                      "~/Scripts/jquery.responsive-tabs.js",
+                      "~/Scripts/jquery.flexslider-min.js",
+                      "~/Scripts/jquery.fitvids.js",
+                      "~/Scripts/jquery-ui-1.10.4.custom.min.js",
+                      "~/Scripts/jquery.inview.min.js",
+                      "~/Scripts/jquery-ui-1.10.4.custom.min.js",
+                      "~/Scripts/owl.carousel.min.js",
+                      "~/Scripts/scripts.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/font-awesome.min.css",
+                      "~/Content/jquery.tagsinput",
+                      "~/Content/owl.carousel.css",
+                      "~/Content/styles.css",
+                      "~/Content/responsive.css"));
         }
     }
 }

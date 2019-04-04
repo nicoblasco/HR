@@ -5,6 +5,20 @@ VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanResource", "HumanResource\HumanResource.csproj", "{A11CD0BF-A4F5-4497-9F7C-ECFCD14E3E00}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - UI", "1 - UI", "{35CB1ABF-3B8A-4591-8349-191E9F651554}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Business", "2 - Business", "{BD409CB9-2DCF-494C-9BAF-330477CCC664}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Data", "4 - Data", "{E92C3C4B-7ED4-4AAD-89EB-68C2B1ED8A88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{E5BF0B87-1468-4513-8EBB-D5ED68942087}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanResources.Business", "HumanResources.Business\HumanResources.Business.csproj", "{B43B0948-CBD3-47D5-9C0E-62716D89C72B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanResource.Domain", "HumanResource.Domain\HumanResource.Domain.csproj", "{AA510270-7BB6-4585-A437-D64758B25DB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanResource.Repository", "HumanResource.Repository\HumanResource.Repository.csproj", "{DE6A313D-0346-4EB6-AFF5-4C57F60CD240}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +29,27 @@ Global
 		{A11CD0BF-A4F5-4497-9F7C-ECFCD14E3E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A11CD0BF-A4F5-4497-9F7C-ECFCD14E3E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A11CD0BF-A4F5-4497-9F7C-ECFCD14E3E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B43B0948-CBD3-47D5-9C0E-62716D89C72B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B43B0948-CBD3-47D5-9C0E-62716D89C72B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B43B0948-CBD3-47D5-9C0E-62716D89C72B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B43B0948-CBD3-47D5-9C0E-62716D89C72B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA510270-7BB6-4585-A437-D64758B25DB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA510270-7BB6-4585-A437-D64758B25DB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA510270-7BB6-4585-A437-D64758B25DB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA510270-7BB6-4585-A437-D64758B25DB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE6A313D-0346-4EB6-AFF5-4C57F60CD240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE6A313D-0346-4EB6-AFF5-4C57F60CD240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE6A313D-0346-4EB6-AFF5-4C57F60CD240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE6A313D-0346-4EB6-AFF5-4C57F60CD240}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A11CD0BF-A4F5-4497-9F7C-ECFCD14E3E00} = {35CB1ABF-3B8A-4591-8349-191E9F651554}
+		{B43B0948-CBD3-47D5-9C0E-62716D89C72B} = {BD409CB9-2DCF-494C-9BAF-330477CCC664}
+		{AA510270-7BB6-4585-A437-D64758B25DB2} = {E5BF0B87-1468-4513-8EBB-D5ED68942087}
+		{DE6A313D-0346-4EB6-AFF5-4C57F60CD240} = {E92C3C4B-7ED4-4AAD-89EB-68C2B1ED8A88}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {42CA5532-AAA4-46D4-B7FD-01F2D16BDA94}
