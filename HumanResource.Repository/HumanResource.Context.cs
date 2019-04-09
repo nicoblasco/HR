@@ -30,5 +30,19 @@ namespace HumanResource.Repository
         public virtual DbSet<AspNetUserLogins> AspNetUserLogins { get; set; }
         public virtual DbSet<AspNetUsers> AspNetUsers { get; set; }
         public virtual DbSet<Categories> Categories { get; set; }
+        public virtual DbSet<LicenseClasses> LicenseClasses { get; set; }
+        public virtual DbSet<BusinessSectors> BusinessSectors { get; set; }
+        public virtual DbSet<Cities> Cities { get; set; }
+        public virtual DbSet<CivilStatus> CivilStatus { get; set; }
+        public virtual DbSet<Countries> Countries { get; set; }
+        public virtual DbSet<DrivingCategories> DrivingCategories { get; set; }
+        public virtual DbSet<IdentificationType> IdentificationType { get; set; }
+        public virtual DbSet<Knowledge> Knowledge { get; set; }
+        public virtual DbSet<LanguageLevel> LanguageLevel { get; set; }
+        public virtual DbSet<Languages> Languages { get; set; }
+        public virtual DbSet<Regions> Regions { get; set; }
+        public virtual DbSet<Software> Software { get; set; }
+        public virtual DbSet<StudiesLevel> StudiesLevel { get; set; }
+        public virtual DbSet<SubCategories> SubCategories { get; set; }
     }
 }

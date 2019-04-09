@@ -1,0 +1,3 @@
+Enable-Migrations
+add-migration SeedOnly
+update-database -TargetMigration SeedOnly

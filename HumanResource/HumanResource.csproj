@@ -47,6 +47,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CommonServiceLocator, Version=2.0.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.2.0\lib\net45\CommonServiceLocator.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -103,6 +106,30 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.2.0\lib\net45\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Configuration, Version=5.0.3.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.2.0\lib\net45\Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.2.0.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.2.0\lib\net45\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception, Version=5.0.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.2.0\lib\net45\Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception.Configuration, Version=5.0.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.2.0\lib\net45\Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mvc5, Version=1.3.0.0, Culture=neutral, PublicKeyToken=43da31bc42a85347, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Mvc5.1.3.0\lib\net45\Unity.Mvc5.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RegistrationByConvention, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.2.0\lib\net45\Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ServiceLocation, Version=2.0.3.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.2.0\lib\net45\Unity.ServiceLocation.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
@@ -196,13 +223,38 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BusinessSectorsController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
+    <Compile Include="Controllers\CitiesController.cs" />
+    <Compile Include="Controllers\CivilStatusController.cs" />
+    <Compile Include="Controllers\CountriesController.cs" />
+    <Compile Include="Controllers\DrivingCategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IdentificationTypeController.cs" />
+    <Compile Include="Controllers\KnowledgeController.cs" />
+    <Compile Include="Controllers\LanguageLevelController.cs" />
+    <Compile Include="Controllers\LanguagesController.cs" />
+    <Compile Include="Controllers\LicenseClassesController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RegionsController.cs" />
+    <Compile Include="Controllers\SoftwareController.cs" />
+    <Compile Include="Controllers\StudiesLevelController.cs" />
+    <Compile Include="Controllers\SubCategoriesController.cs" />
+    <Compile Include="CustomAttribute\AuthorizeRole.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904041415563_InitialCreate.cs" />
+    <Compile Include="Migrations\201904041415563_InitialCreate.Designer.cs">
+      <DependentUpon>201904041415563_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904052010250_SeedOnly.cs" />
+    <Compile Include="Migrations\201904052010250_SeedOnly.Designer.cs">
+      <DependentUpon>201904052010250_SeedOnly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -216,17 +268,25 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\dataTables.bootstrap.css" />
+    <Content Include="Content\dataTables.responsive.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
-    <Content Include="Content\fonts\raleway-v13-latin-300.svg" />
-    <Content Include="Content\fonts\raleway-v13-latin-500.svg" />
-    <Content Include="Content\fonts\raleway-v13-latin-600.svg" />
-    <Content Include="Content\fonts\raleway-v13-latin-regular.svg" />
+    <Content Include="Content\jquery.dataTables.css" />
+    <Content Include="Content\jquery.dataTables.min.css" />
+    <Content Include="Content\jquery.datetimepicker.min.css" />
+    <Content Include="Content\lobibox.css" />
     <Content Include="Content\owl.carousel.css" />
     <Content Include="Content\responsive.css" />
     <Content Include="Content\styles.css" />
+    <Content Include="Content\stylesLogin.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\raleway-v13-latin-300.svg" />
+    <Content Include="fonts\raleway-v13-latin-500.svg" />
+    <Content Include="fonts\raleway-v13-latin-600.svg" />
+    <Content Include="fonts\raleway-v13-latin-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="ApplicationInsights.config">
@@ -234,6 +294,7 @@
     </Content>
     <Content Include="Images\15873313_1200395270046365_3871643794643748735_n.jpg" />
     <Content Include="Images\600736_309661239119777_416736846_n.jpg" />
+    <Content Include="Images\bg.jpg" />
     <Content Include="Images\details_close.png" />
     <Content Include="Images\details_open.png" />
     <Content Include="Images\error-404.jpg" />
@@ -241,6 +302,7 @@
     <Content Include="Images\loading.gif" />
     <Content Include="Images\loading2.gif" />
     <Content Include="Images\Logo.png" />
+    <Content Include="Images\logoLogin.png" />
     <Content Include="Images\logo_muni.png" />
     <Content Include="Images\people1.jpg" />
     <Content Include="Images\people1.png" />
@@ -249,16 +311,23 @@
     <Content Include="Images\person-icon.jpg" />
     <Content Include="Images\person-icon.png" />
     <Content Include="Images\photo.jpg" />
+    <Content Include="Images\retratoHombre.jpg" />
+    <Content Include="Images\retratoMujer.png" />
     <Content Include="Images\sort_asc.png" />
     <Content Include="Images\sort_asc_disabled.png" />
     <Content Include="Images\sort_both.png" />
     <Content Include="Images\sort_desc.png" />
     <Content Include="Images\sort_desc_disabled.png" />
     <Content Include="Images\switch.png" />
+    <Content Include="Images\title-top-bg.png" />
+    <Content Include="Scripts\bootstrap-datetimepicker.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\dataTables.bootstrap.min.js" />
+    <Content Include="Scripts\dataTables.buttons.min.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
@@ -277,29 +346,33 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="Content\fonts\raleway-v13-latin-300.eot" />
-    <Content Include="Content\fonts\raleway-v13-latin-300.ttf" />
-    <Content Include="Content\fonts\raleway-v13-latin-300.woff" />
-    <Content Include="Content\fonts\raleway-v13-latin-300.woff2" />
-    <Content Include="Content\fonts\raleway-v13-latin-500.eot" />
-    <Content Include="Content\fonts\raleway-v13-latin-500.ttf" />
-    <Content Include="Content\fonts\raleway-v13-latin-500.woff" />
-    <Content Include="Content\fonts\raleway-v13-latin-500.woff2" />
-    <Content Include="Content\fonts\raleway-v13-latin-600.eot" />
-    <Content Include="Content\fonts\raleway-v13-latin-600.ttf" />
-    <Content Include="Content\fonts\raleway-v13-latin-600.woff" />
-    <Content Include="Content\fonts\raleway-v13-latin-600.woff2" />
-    <Content Include="Content\fonts\raleway-v13-latin-regular.eot" />
-    <Content Include="Content\fonts\raleway-v13-latin-regular.ttf" />
-    <Content Include="Content\fonts\raleway-v13-latin-regular.woff" />
-    <Content Include="Content\fonts\raleway-v13-latin-regular.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="Content\jquery.tagsinput.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\raleway-v13-latin-300.eot" />
+    <Content Include="fonts\raleway-v13-latin-300.ttf" />
+    <Content Include="fonts\raleway-v13-latin-300.woff" />
+    <Content Include="fonts\raleway-v13-latin-300.woff2" />
+    <Content Include="fonts\raleway-v13-latin-500.eot" />
+    <Content Include="fonts\raleway-v13-latin-500.ttf" />
+    <Content Include="fonts\raleway-v13-latin-500.woff" />
+    <Content Include="fonts\raleway-v13-latin-500.woff2" />
+    <Content Include="fonts\raleway-v13-latin-600.eot" />
+    <Content Include="fonts\raleway-v13-latin-600.ttf" />
+    <Content Include="fonts\raleway-v13-latin-600.woff" />
+    <Content Include="fonts\raleway-v13-latin-600.woff2" />
+    <Content Include="fonts\raleway-v13-latin-regular.eot" />
+    <Content Include="fonts\raleway-v13-latin-regular.ttf" />
+    <Content Include="fonts\raleway-v13-latin-regular.woff" />
+    <Content Include="fonts\raleway-v13-latin-regular.woff2" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\fnReloadAjax.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -308,6 +381,8 @@
     <Content Include="Scripts\jquery-ui-1.10.4.custom.min.js" />
     <Content Include="Scripts\jquery-ui.js" />
     <Content Include="Scripts\jquery.ba-outside-events.min.js" />
+    <Content Include="Scripts\jquery.dataTables.js" />
+    <Content Include="Scripts\jquery.datetimepicker.full.min.js" />
     <Content Include="Scripts\jquery.fitvids.js" />
     <Content Include="Scripts\jquery.flexslider-min.js" />
     <Content Include="Scripts\jquery.inview.min.js" />
@@ -317,9 +392,14 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\lobibox.js" />
     <Content Include="Scripts\maplace.min.js" />
     <Content Include="Scripts\media.match.min.js" />
+    <Content Include="Scripts\messageboxes.js" />
+    <Content Include="Scripts\modalFunctions.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\notifications.js" />
+    <Content Include="Scripts\npm.js" />
     <Content Include="Scripts\owl.carousel.js" />
     <Content Include="Scripts\owl.carousel.min.js" />
     <Content Include="Scripts\popper-utils.js" />
@@ -331,6 +411,12 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="sounds\sound1.ogg" />
+    <Content Include="sounds\sound2.ogg" />
+    <Content Include="sounds\sound3.ogg" />
+    <Content Include="sounds\sound4.ogg" />
+    <Content Include="sounds\sound5.ogg" />
+    <Content Include="sounds\sound6.ogg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -374,10 +460,30 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Shared\_LayoutLogin.cshtml" />
+    <Content Include="Views\Account\LoginCompany.cshtml" />
+    <Content Include="Views\Account\RegisterCompany.cshtml" />
+    <Content Include="Views\Account\RegisterAgent.cshtml" />
+    <Content Include="Views\Account\LoginAgent.cshtml" />
+    <Content Include="Views\Home\Management.cshtml" />
+    <Content Include="Views\Shared\_PartialAsideAdmin.cshtml" />
+    <Content Include="Views\Categories\Index.cshtml" />
+    <Content Include="Views\BusinessSectors\Index.cshtml" />
+    <Content Include="Views\Cities\Index.cshtml" />
+    <Content Include="Views\CivilStatus\Index.cshtml" />
+    <Content Include="Views\Countries\Index.cshtml" />
+    <Content Include="Views\DrivingCategories\Index.cshtml" />
+    <Content Include="Views\IdentificationType\Index.cshtml" />
+    <Content Include="Views\Knowledge\Index.cshtml" />
+    <Content Include="Views\LanguageLevel\Index.cshtml" />
+    <Content Include="Views\Languajes\Index.cshtml" />
+    <Content Include="Views\Regions\Index.cshtml" />
+    <Content Include="Views\Software\Index.cshtml" />
+    <Content Include="Views\StudiesLevel\Index.cshtml" />
+    <Content Include="Views\SubCategories\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Categories\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -385,6 +491,10 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HumanResource.Repository\HumanResource.Repository.csproj">
+      <Project>{DE6A313D-0346-4EB6-AFF5-4C57F60CD240}</Project>
+      <Name>HumanResource.Repository</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HumanResources.Business\HumanResources.Business.csproj">
       <Project>{b43b0948-cbd3-47d5-9c0e-62716d89c72b}</Project>
       <Name>HumanResources.Business</Name>
@@ -395,6 +505,14 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201904041415563_InitialCreate.resx">
+      <DependentUpon>201904041415563_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904052010250_SeedOnly.resx">
+      <DependentUpon>201904052010250_SeedOnly.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

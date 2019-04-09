@@ -48,10 +48,10 @@ namespace HumanResource.Models
 
     public class LoginViewModel
     {
+
         [Required]
-        [Display(Name = "Correo electrónico")]
-        [EmailAddress]
-        public string Email { get; set; }
+        [Display(Name = "Identificación")]
+        public string UserName { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
@@ -64,6 +64,12 @@ namespace HumanResource.Models
 
     public class RegisterViewModel
     {
+
+        [Required]
+        //[StringLength(8, ErrorMessage = "El número de caracteres de {0} debe ser al menos {7}.", MinimumLength = 7)]
+        [Display(Name = "DNI")]
+        public string UserName { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Correo electrónico")]

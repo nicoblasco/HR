@@ -14,7 +14,17 @@ namespace HumanResource.Repository
     
     public partial class Categories
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Categories()
+        {
+            this.SubCategories = new HashSet<SubCategories>();
+        }
+    
         public int Id { get; set; }
         public string Name { get; set; }
+        public Nullable<bool> Enable { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<SubCategories> SubCategories { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HumanResource.CustomAttribute;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -25,6 +26,12 @@ namespace HumanResource.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        [AuthorizeRole(Roles = "Administrator")]
+        public ActionResult Management()
+        {
+            return View("Management");
         }
     }
 }

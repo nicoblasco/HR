@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HumanResources.Business
+namespace HumanResources.Business.Interface
 {
-    public class Class1
+    public interface ILanguagesBusiness
     {
     }
 }

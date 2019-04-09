@@ -12,5 +12,11 @@ namespace HumanResources.Business.Interface
     {
         string GetName(int Id);
         List<Categories> GetAllCategories();
+
+        List<Categories> GetDuplicates(int id, string descripcion);
+
+        Categories GetCategory(int Id);
+
+        void Save(Categories category);
     }
 }

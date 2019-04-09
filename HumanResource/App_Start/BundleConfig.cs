@@ -30,8 +30,12 @@ namespace HumanResource
                       "~/Scripts/jquery-ui-1.10.4.custom.min.js",
                       "~/Scripts/jquery.inview.min.js",
                       "~/Scripts/jquery-ui-1.10.4.custom.min.js",
-                      "~/Scripts/owl.carousel.min.js",
-                      "~/Scripts/scripts.js"));
+                      "~/Scripts/owl.carousel.min.js",                      
+                      "~/Scripts/scripts.js",
+                      "~/Scripts/lobibox.js",
+                      "~/Scripts/jquery.dataTables.js",
+                      "~/Scripts/dataTables.bootstrap.min.js",
+                      "~/Scripts/fnReloadAjax.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
@@ -39,7 +43,16 @@ namespace HumanResource
                       "~/Content/jquery.tagsinput",
                       "~/Content/owl.carousel.css",
                       "~/Content/styles.css",
-                      "~/Content/responsive.css"));
+                      "~/Content/responsive.css",
+                      "~/Content/lobibox.css",
+                      "~/Content/dataTables.bootstrap.css",
+                      "~/Content/lobibox.css",
+                      "~/Content/dataTables.responsive.css"));
+
+            bundles.Add(new StyleBundle("~/Content/cssLogin").Include(
+                      "~/Content/bootstrap.css",
+                      "~/Content/stylesLogin.css"));
+
         }
     }
 }

@@ -1,0 +1,34 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="header-page-title job-registration clearfix">
+    <div class="title-overlay"></div>
+    <div class="container">
+        <h1>Administración</h1>
+
+        <ol class="breadcrumb">
+            <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+            <li class="active">Administración</li>
+        </ol>
+
+    </div> <!-- end .container -->
+
+</div> <!-- end .header-page-title -->
+<!-- Page Content -->
+
+<div id="page-content" class="page-content pt60">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 page-sidebar">
+                @Html.Partial("_PartialAsideAdmin")
+            </div> <!-- end .page-sidebar -->
+
+            <div class="col-sm-8 page-content">
+
+
+
+            </div> <!-- end .page-content -->
+        </div>
+    </div> <!-- end .container -->
+</div> <!-- end #page-content -->

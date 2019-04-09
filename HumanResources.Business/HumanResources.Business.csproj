@@ -48,10 +48,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessSectorsBusiness.cs" />
     <Compile Include="CategoryBusiness.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="CitiesBusiness.cs" />
+    <Compile Include="CivilStatusBusiness.cs" />
+    <Compile Include="CountriesBusiness.cs" />
+    <Compile Include="DrivingCategoriesBusiness.cs" />
+    <Compile Include="IdentificationTypeBusiness.cs" />
+    <Compile Include="Interface\IBusinessSectorsBusiness.cs" />
     <Compile Include="Interface\ICategoryBusiness.cs" />
+    <Compile Include="Interface\ICitiesBusiness.cs" />
+    <Compile Include="Interface\ICivilStatusBusiness.cs" />
+    <Compile Include="Interface\ICountriesBusiness.cs" />
+    <Compile Include="Interface\IDrivingCategoriesBusiness.cs" />
+    <Compile Include="Interface\IIdentificationTypeBusiness.cs" />
+    <Compile Include="Interface\IKnowledgeBusiness.cs" />
+    <Compile Include="Interface\ILanguageLevelBusiness.cs" />
+    <Compile Include="Interface\ILanguagesBusiness.cs" />
+    <Compile Include="Interface\ILicenseClasesBusiness.cs" />
+    <Compile Include="Interface\IRegionsBusiness.cs" />
+    <Compile Include="Interface\ISoftwareBusiness.cs" />
+    <Compile Include="Interface\IStudiesLevelBusiness.cs" />
+    <Compile Include="Interface\ISubCategoriesBusiness.cs" />
+    <Compile Include="KnowledgeBusiness.cs" />
+    <Compile Include="LanguageLevelBusiness.cs" />
+    <Compile Include="LanguagesBusiness.cs" />
+    <Compile Include="LicenseClassesBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegionsBusiness.cs" />
+    <Compile Include="SoftwareBusiness.cs" />
+    <Compile Include="StudiesLevelBusiness.cs" />
+    <Compile Include="SubCategoriesBusiness.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HumanResource.Domain\HumanResource.Domain.csproj">

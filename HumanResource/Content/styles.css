@@ -392,7 +392,7 @@ textarea {
     -webkit-border-radius: 0;
     border-radius: 0;
     background-image: none;
-    color: #346abb;
+    /*color: #346abb;*/
     vertical-align: middle;
     text-align: center;
     white-space: nowrap;
@@ -577,7 +577,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .header-page-title {
     position: relative;
     width: 100%;
-    background: url('../img/title-bg.png') center center no-repeat;
+    background: url('../Images/title-top-bg.png') center center no-repeat;
     background-size: cover;
     color: #ffffff;
     _border-bottom: 3px solid #346abb;
@@ -2172,7 +2172,7 @@ html[xmlns] .slides {
                 width: 100%;
                 height: 60px;
                 border-right: 1px solid #e7e7e7;
-                background-image: url(../img/categories-icons.png);
+                /*background-image: url(../img/categories-icons.png);*/
                 background-repeat: no-repeat;
                 -webkit-transition: all 0s;
                 -moz-transition: all 0s;
@@ -3682,7 +3682,7 @@ html[xmlns] .slides {
             border-right: 0;
         }
 
-        .pagination > li > a {
+        /*.pagination > li > a {
             display: block;
             width: 30px;
             height: 28px;
@@ -3690,7 +3690,7 @@ html[xmlns] .slides {
             text-align: center;
             text-decoration: none;
             line-height: 28px;
-        }
+        }*/
 
             .pagination > li > a:hover {
                 color: #346abb;
@@ -4107,7 +4107,7 @@ html[xmlns] .slides {
 #header .header-notification-bar {
     position: relative;
     width: 100%;
-    padding: 15px 0;
+    padding: 5px 0;
     height: auto;
     border-bottom: 1px solid #ddd;
     background-color: #fff;
@@ -4194,7 +4194,7 @@ html[xmlns] .slides {
 
 .non-register-user .notification-section li {
     position: relative;
-    padding: 1px 15px;
+    /*padding: 1px 15px;*/
     border-right: 1px solid #ddd;
 }
 
@@ -8009,4 +8009,53 @@ ul.client-applicants-tab {
     line-height: 26px;
     margin-top: 15px;
     text-transform: uppercase;
+}
+
+/* raleway-300 - latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/raleway-v13-latin-300.eot'); /* IE9 Compat Modes */
+    src: local('Raleway Light'), local('Raleway-Light'), url('../fonts/raleway-v13-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/raleway-v13-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/raleway-v13-latin-300.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/raleway-v13-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/raleway-v13-latin-300.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-regular - latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/raleway-v13-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Raleway'), local('Raleway-Regular'), url('../fonts/raleway-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/raleway-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/raleway-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/raleway-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/raleway-v13-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-500 - latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/raleway-v13-latin-500.eot'); /* IE9 Compat Modes */
+    src: local('Raleway Medium'), local('Raleway-Medium'), url('../fonts/raleway-v13-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/raleway-v13-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/raleway-v13-latin-500.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/raleway-v13-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/raleway-v13-latin-500.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-600 - latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/raleway-v13-latin-600.eot'); /* IE9 Compat Modes */
+    src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url('../fonts/raleway-v13-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/raleway-v13-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/raleway-v13-latin-600.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/raleway-v13-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/raleway-v13-latin-600.svg#Raleway') format('svg'); /* Legacy iOS */
 }

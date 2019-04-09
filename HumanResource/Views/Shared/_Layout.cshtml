@@ -11,10 +11,16 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
+
+
     <style>
         .img_logo {
             padding-left: 15px;
-        } 
+        }
+
+        .color-blue {
+            color: #346abb !Important;
+        }
     </style>
 </head>
 <body>
@@ -27,7 +33,6 @@
                 <!--
                 HEADER TOP BAR WITH NOTIFICATION FOR REGISTER USER
                 -->
-
                 <!--
                 END HEADER NOTIFICATION TOP BAR
                 -->
@@ -47,27 +52,20 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-6 col-sm-5">
-                                    <div class="search-form">
-
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3 col-sm-4">
+                                <div class="col-md-9 col-sm-9">
                                     <div class="notification-section text-right">
 
                                         <ul class="list-inline">
                                             @*<li>
-                                                <a href="#">EN<i class="fa fa-caret-down"></i></a>
-                                                <ul>
-                                                    <li><a href="#">DE</a></li>
-                                                    <li><a href="#">ES</a></li>
-                                                    <li><a href="#">IT</a></li>
-                                                </ul>
+                                                    <a href="#">EN<i class="fa fa-caret-down"></i></a>
+                                                    <ul>
+                                                        <li><a href="#">DE</a></li>
+                                                        <li><a href="#">ES</a></li>
+                                                        <li><a href="#">IT</a></li>
+                                                    </ul>
 
-                                            </li>*@
-                                            <li><a href="#">Inicio</a></li>
-                                            <li><a href="#">Registrese</a></li>
+                                                </li>*@
+                                            @Html.Partial("_LoginPartial")
                                         </ul>
                                     </div>
                                 </div>
@@ -125,7 +123,7 @@
                                             <li><a href="professionals.html">Profesionales</a></li>
                                         </ul>
                                     </li>
-                                    
+
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                             Empresas
@@ -151,6 +149,7 @@
                                         </ul>
                                     </li>
                                     <li><a href="contact-us.html">Contacto</a></li>
+                                    <li><a href="@Url.Action("Management", "Home")">Administración</a></li>
                                 </ul>
 
                             </div><!-- /.navbar-collapse -->
@@ -175,13 +174,14 @@
         <footer id="footer">
             <div class="copyright">
                 <div class="container">
-                    <p>2016 &copy; All rights reserved. Powered by <a href="#">UOUapps</a></p>
+                    <p>2019 &copy; Todos los derechos reservados <a href="https://twitter.com/NicolasMBlasco">NicolasMBlasco</a></p>
 
                     <ul class="list-inline">
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                         <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        @Html.ActionLink("Asesores", "LoginAgent", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
                     </ul>
                 </div>
             </div>
@@ -189,9 +189,14 @@
         <!-- end #footer -->
 
     </div>
+    <!-- Progress Loader -->
+    <div id="div-loader" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(102, 102, 102); z-index: 30001; opacity: 0.8; display: none">
+        <p style="position: absolute; color: White; top: 35%; left: 45%;">
+            <img src=@Url.Content("~/Images/loading.gif") alt="Loading...">
+        </p>
+    </div>
 
 
-    
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

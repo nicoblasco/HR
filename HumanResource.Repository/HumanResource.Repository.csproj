@@ -62,9 +62,30 @@
     <Compile Include="AspNetUsers.cs">
       <DependentUpon>HumanResource.tt</DependentUpon>
     </Compile>
+    <Compile Include="BusinessSectors.cs">
+      <DependentUpon>HumanResource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessSectorsRepository.cs" />
     <Compile Include="Categories.cs">
       <DependentUpon>HumanResource.tt</DependentUpon>
     </Compile>
+    <Compile Include="CategoryRepository.cs" />
+    <Compile Include="Cities.cs">
+      <DependentUpon>HumanResource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CitiesRepository.cs" />
+    <Compile Include="CivilStatus.cs">
+      <DependentUpon>HumanResource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CivilStatusRepository.cs" />
+    <Compile Include="Countries.cs">
+      <DependentUpon>HumanResource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CountriesRepository.cs" />
+    <Compile Include="DrivingCategories.cs">
+      <DependentUpon>HumanResource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DrivingCategoriesRepository.cs" />
     <Compile Include="HumanResource.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -80,11 +101,47 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HumanResource.edmx</DependentUpon>
     </Compile>
+    <Compile Include="IdentificationType.cs">
+      <DependentUpon>HumanResource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IdentificationTypeRepository.cs" />
     <Compile Include="Infrastructure\BaseRepository.cs" />
     <Compile Include="Infrastructure\Contract\IBaseRepository.cs" />
     <Compile Include="Infrastructure\Contract\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
+    <Compile Include="Knowledge.cs">
+      <DependentUpon>HumanResource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KnowledgeRepository.cs" />
+    <Compile Include="LanguageLevel.cs">
+      <DependentUpon>HumanResource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LanguageLevelRepository.cs" />
+    <Compile Include="Languages.cs">
+      <DependentUpon>HumanResource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LanguagesRepository.cs" />
+    <Compile Include="LicenseClasesRepository.cs" />
+    <Compile Include="LicenseClasses.cs">
+      <DependentUpon>HumanResource.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Regions.cs">
+      <DependentUpon>HumanResource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RegionsRepository.cs" />
+    <Compile Include="Software.cs">
+      <DependentUpon>HumanResource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SoftwareRepository.cs" />
+    <Compile Include="StudiesLevel.cs">
+      <DependentUpon>HumanResource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudiesLevelRepository.cs" />
+    <Compile Include="SubCategories.cs">
+      <DependentUpon>HumanResource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SubCategoriesRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="HumanResource.edmx">
