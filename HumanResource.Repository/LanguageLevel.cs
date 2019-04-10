@@ -17,6 +17,6 @@ namespace HumanResource.Repository
         public int Id { get; set; }
         public string Name { get; set; }
         public Nullable<int> Level { get; set; }
-        public string Enable { get; set; }
+        public bool Enable { get; set; }
     }
 }

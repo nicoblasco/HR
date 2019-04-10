@@ -256,6 +256,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CitiesViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -491,6 +492,10 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HumanResource.Domain\HumanResource.Domain.csproj">
+      <Project>{AA510270-7BB6-4585-A437-D64758B25DB2}</Project>
+      <Name>HumanResource.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HumanResource.Repository\HumanResource.Repository.csproj">
       <Project>{DE6A313D-0346-4EB6-AFF5-4C57F60CD240}</Project>
       <Name>HumanResource.Repository</Name>

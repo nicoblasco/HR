@@ -15,19 +15,19 @@
         <AssociationConnector Association="HumanResourceModel.AspNetUserRoles" ManuallyRouted="false" />
         <EntityTypeShape EntityType="HumanResourceModel.LicenseClasses" Width="1.5" PointX="5.375" PointY="6.75" />
         <EntityTypeShape EntityType="HumanResourceModel.BusinessSectors" Width="1.5" PointX="7.75" PointY="4.75" />
-        <EntityTypeShape EntityType="HumanResourceModel.Cities" Width="1.5" PointX="12.25" PointY="1" />
         <EntityTypeShape EntityType="HumanResourceModel.CivilStatus" Width="1.5" PointX="7.75" PointY="7.75" />
         <EntityTypeShape EntityType="HumanResourceModel.Countries" Width="1.5" PointX="7.75" PointY="1.125" />
         <EntityTypeShape EntityType="HumanResourceModel.DrivingCategories" Width="1.5" PointX="0.75" PointY="9.75" />
         <EntityTypeShape EntityType="HumanResourceModel.IdentificationType" Width="1.5" PointX="9.75" PointY="4.75" />
         <EntityTypeShape EntityType="HumanResourceModel.Knowledge" Width="1.5" PointX="9.75" PointY="7.75" />
-        <EntityTypeShape EntityType="HumanResourceModel.LanguageLevel" Width="1.5" PointX="7.75" PointY="10.75" />
         <EntityTypeShape EntityType="HumanResourceModel.Languages" Width="1.5" PointX="9.75" PointY="10.75" />
-        <EntityTypeShape EntityType="HumanResourceModel.Regions" Width="1.5" PointX="10" PointY="0.875" />
         <EntityTypeShape EntityType="HumanResourceModel.Software" Width="1.5" PointX="11.75" PointY="4.75" />
         <EntityTypeShape EntityType="HumanResourceModel.StudiesLevel" Width="1.5" PointX="11.75" PointY="7.75" />
         <EntityTypeShape EntityType="HumanResourceModel.SubCategories" Width="1.5" PointX="5.375" PointY="9.625" />
         <AssociationConnector Association="HumanResourceModel.FK_SubCategories_Categories" />
+        <EntityTypeShape EntityType="HumanResourceModel.LanguageLevel" Width="1.5" PointX="0.75" PointY="12.75" />
+        <EntityTypeShape EntityType="HumanResourceModel.Cities" Width="1.5" PointX="12.25" PointY="1" />
+        <EntityTypeShape EntityType="HumanResourceModel.Regions" Width="1.5" PointX="10" PointY="0.875" />
         <AssociationConnector Association="HumanResourceModel.FK_Cities_Regions" />
         <AssociationConnector Association="HumanResourceModel.FK_Regions_Countries" />
       </Diagram>

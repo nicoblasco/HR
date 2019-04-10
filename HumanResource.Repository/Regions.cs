@@ -23,7 +23,7 @@ namespace HumanResource.Repository
         public int Id { get; set; }
         public int CountryId { get; set; }
         public string Name { get; set; }
-        public string Enable { get; set; }
+        public bool Enable { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Cities> Cities { get; set; }
